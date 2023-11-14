@@ -13,8 +13,9 @@ public class GatewayConfig {
                 .route("user", r -> r.path("/user/**")
                         // .uri("http://localhost:8085"))//local
                         .uri("https://hospitalbackuser-d316271b873b.herokuapp.com"))
-                // .route("user", r -> r.path("/user/**")
-                //         .uri("http://localhost:8085"))
+                .route("medico", r -> r.path("/medico/**")
+                        // .uri("http://localhost:8085"))
+                        .uri("https://backmedico-bafcf86d5602.herokuapp.com"))
                 .build();
     }
 }

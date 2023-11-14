@@ -15,7 +15,7 @@ public class GatewayConfig {
                         .uri("https://hospitalbackuser-d316271b873b.herokuapp.com"))
                 .route("medico", r -> r.path("/medico/**")
                         // .uri("http://localhost:8085"))
-                        .uri("https://backmedico-bafcf86d5602.herokuapp.com"))
+                        .uri("https://apibackmedico-017465360da7.herokuapp.com"))
                 .build();
     }
 }

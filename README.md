@@ -1,1 +1,1 @@
-# hospeitalcare_backGateway
+# hospitalcare_backGateway

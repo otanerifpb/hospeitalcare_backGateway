@@ -11,12 +11,21 @@ public class GatewayConfig {
     public RouteLocator gatewayRoutes(RouteLocatorBuilder builder) {
         return builder.routes()
                 .route("user", r -> r.path("/user/**")
-                        // .uri("http://localhost:8085"))//local
-                        .uri("https://userback-6fb5d32424ff.herokuapp.com"))
+                        .uri("http://localhost:8085"))
+                        //.uri("https://userback-6fb5d32424ff.herokuapp.com"))
                 .route("medico", r -> r.path("/medico/**")
-                        // .uri("http://localhost:8085"))
-                        .uri("https://medicoback-16c59f9b3a2e.herokuapp.com"))
+                        .uri("http://localhost:8087"))
+                        //.uri("https://medicoback-16c59f9b3a2e.herokuapp.com"))
+                .route("paciente", r -> r.path("/paciente/**")
+                        .uri("http://localhost:8087"))
+                        //.uri("https://medicoback-16c59f9b3a2e.herokuapp.com"))
+                .route("enfermeiro", r -> r.path("/enfermeiro/**")
+                        .uri("http://localhost:8088"))
+                .route("recepcionista", r -> r.path("/recepcionista/**")
+                        .uri("http://localhost:8088"))
                 .build();
     }
+
+    
 }
 

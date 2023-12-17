@@ -21,8 +21,10 @@ public class GatewayConfig {
                         //.uri("https://medicoback-16c59f9b3a2e.herokuapp.com"))
                 .route("enfermeiro", r -> r.path("/enfermeiro/**")
                         .uri("http://localhost:8088"))
+                        //.uri("https://enfermeiroback-43911fcd87b7.herokuapp.com"))
                 .route("recepcionista", r -> r.path("/recepcionista/**")
                         .uri("http://localhost:8088"))
+                        //.uri("https://enfermeiroback-43911fcd87b7.herokuapp.com"))
                 .build();
     }
 
